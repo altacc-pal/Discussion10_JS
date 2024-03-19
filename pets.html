@@ -15,21 +15,26 @@
     
             
             // 1. Change the h1 element to your name.
-            document.querySelector("h1").innerHTML = "Vitaliy"
+            document.querySelector("h1").innerHTML = "Vitaliy";
             
                
             // 2. Update the three span elements using ONLY JavaScript
-            document.getElementById("URL").innerHTML = document.URL
-            document.getElementById("items").innerHTML = document.getElementsByTagName("h2").length
-            document.getElementById("time").innerHTML = Date.now()
+            document.getElementById("URL").innerHTML = document.URL;
+            document.getElementById("items").innerHTML = document.getElementsByTagName("h2").length;
+            document.getElementById("time").innerHTML = new Date();
 
             // 3. Change the background color and margin for the entire page.
+            document.body.style.background = "#ffffff";
+            document.body.style.margin = "30px";
                 
         }
     
         // 4. If someone uses the keyboard shortcut to copy the words "Thank you for visiting!" then add the words "Go Blue" to the final div.  
         // Each occurrence should be on a separate line.  Don't use 
         // paragraphs. 
+        function copyFunction () {
+            document.getElementById("cheer").innerHTML += "<br>Go Blue!\n";
+        }
     
                    
     </script>
